@@ -1,60 +1,37 @@
-import './App.css';
-import Messages from './components/Messages';
-import React from 'react';
-import Input from "./components/Input";
+import React from "react";
+import { Navigate, Route, Routes} from 'react-router-dom';
+import Chat from './components/Chat';
+import Header from "./components/Header";
+import Login from './components/Login'
+import Sidebar from "./components/Sidebar";
 
-function randomName() {
- const adjectives = ["autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark", "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter", "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue", "billowing", "broken", "cold", "damp", "falling", "frosty", "green", "long", "late", "lingering", "bold", "little", "morning", "muddy", "old", "red", "rough", "still", "small", "sparkling", "throbbing", "shy", "wandering", "withered", "wild", "black", "young", "holy", "solitary", "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine", "polished", "ancient", "purple", "lively", "nameless"];
- const nouns = ["waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning", "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter", "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook", "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly", "feather", "grass", "haze", "mountain", "night", "pond", "darkness", "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder", "violet", "water", "wildflower", "wave", "water", "resonance", "sun", "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper", "frog", "smoke", "star"];
- const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
- const noun = nouns[Math.floor(Math.random() * nouns.length)];
- return adjective + noun;
-}
-
-function randomColor() {
- return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
-}
-class App extends React.Component {
-
-
-  state = {
-    messages: [
-      {
-        text: "This is a test message!",
-        member: {
-          color: "blue",
-          username: "bluemoon"
-        }
-      }
-    ],
-    member: {
-      username: randomName(),
-      color: randomColor()
-    }
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={username: ""}
   }
-
-  onSendMessage = (message) => {
-    const messages = this.state.messages
-    messages.push({
-      text: message,
-      member: this.state.member
-    })
-    this.setState({messages: messages})
+  handleLogin = (username) =>{
+    this.setState({username})
   }
-
+  toggleSidebar = () =>{
+    this.sidebar.ToggleSidebar();
+  }
   render(){
     return (
-      <div className="App">
-      <div className="App-header">
-        <h1>Algebra Seminarski Rad</h1>
-      </div>
-      <Messages
-        messages={this.state.messages}
-        currentMember={this.state.member}
-      />
-      <Input onSendMessage={this.onSendMessage}/>
-    </div>
-    );
+    <div>
+    <Header toggleSidebar={this.toggleSidebar} username={this.state.username}></Header>
+    <Sidebar ref={(reference)=> this.sidebar = reference}/>
+
+
+    <Routes>
+      <Route path="/" element={ this.state.username ?  <Chat username={this.state.username}/> : <Navigate to="/login" />}></Route>
+      <Route path="/login" element={<Login onLogin={this.handleLogin}/>}> 
+    </Route>
+
+      
+    </Routes>
+
+    </div>)
   }
 }
 
