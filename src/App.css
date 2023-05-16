@@ -1,8 +1,23 @@
+body {
+  /* background-image: linear-gradient(#5f3dc4, #748ffc); */
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 10px;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
 .App {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 50vh;
 }
 
 .App-header {
