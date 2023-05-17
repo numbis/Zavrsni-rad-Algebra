@@ -32,7 +32,7 @@ class App extends React.Component {
 
         <Routes>
           <Route
-            path="/"
+            path="/Zavrsni-rad-Algebra/"
             element={
               this.state.username ? (
                 <Chat username={this.state.username} />
@@ -41,7 +41,7 @@ class App extends React.Component {
               )
             }
           ></Route>
-          <Route path="login" element={<Login onLogin={this.handleLogin} />}>
+          <Route path="/Zavrsni-rad-Algebra/login" element={<Login onLogin={this.handleLogin} />}>
 
           </Route>
           <Route
