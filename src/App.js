@@ -42,13 +42,14 @@ class App extends React.Component {
             }
           ></Route>
           <Route path="login" element={<Login onLogin={this.handleLogin} />}>
-            <Route
-              path="/Zavrsni-rad-Algebra/about"
-              element={
-                this.state.username ? <About /> : <Navigate to="/Zavrsni-rad-Algebra/login" />
-              }
-            />
+
           </Route>
+          <Route
+            path="/Zavrsni-rad-Algebra/about"
+            element={
+              this.state.username ? <About /> : <Navigate to="/Zavrsni-rad-Algebra/login" />
+            }
+          />
           <Route
             path="/Zavrsni-rad-Algebra/about"
             element={
