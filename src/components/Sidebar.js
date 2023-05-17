@@ -29,12 +29,12 @@ class Sidebar extends React.Component {
           <div className="sd-body">
             <ul>
               <li>
-                <a href="#" className="sd-link">
+                <a href="/Zavrsni-rad-Algebra/" className="sd-link">
                   ChatApp
                 </a>
               </li>
               <li>
-                <a href="/About.js" className="sd-link">
+                <a href="/Zavrsni-rad-Algebra/about" className="sd-link">
                   About
                 </a>
               </li>

@@ -39,3 +39,13 @@ body {
 .login-btn:hover {
   opacity: 70%;
 }
+
+.login-form img {
+  opacity:40%;
+}
+
+.login-form img:hover {
+  opacity: 30%;
+  cursor: pointer;
+
+}

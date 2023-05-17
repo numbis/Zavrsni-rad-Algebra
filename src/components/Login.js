@@ -9,15 +9,15 @@ const Login = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     props.onLogin(usernameText);
-    navigate("/");
+    navigate("/Zavrsni-rad-Algebra/");
   };
   return (
-    <div ClassName="container">
+    <div className="container">
       <form className="login-form" onSubmit={handleSubmit}>
-        <label for="title">
+        <label htmlFor="title">
           <h1>Login</h1>
         </label>
-        <img src="/img/123.png" />
+        <img src="img/123.png" blank="123" />
         <input
           type="text"
           id="title"
@@ -28,7 +28,6 @@ const Login = (props) => {
         ></input>
         <button className="login-btn">Login</button>
       </form>
-      <img src="/img/123.png" />
     </div>
   );
 };

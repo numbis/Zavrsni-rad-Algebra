@@ -37,25 +37,25 @@ class App extends React.Component {
               this.state.username ? (
                 <Chat username={this.state.username} />
               ) : (
-                <Navigate to="/login" />
+                <Navigate to="/Zavrsni-rad-Algebra/login" />
               )
             }
           ></Route>
           <Route path="login" element={<Login onLogin={this.handleLogin} />}>
             <Route
-              path="about"
+              path="/Zavrsni-rad-Algebra/about"
               element={
-                this.state.username ? <About /> : <Navigate to="login" />
+                this.state.username ? <About /> : <Navigate to="/Zavrsni-rad-Algebra/login" />
               }
             />
           </Route>
           <Route
-            path="about"
+            path="/Zavrsni-rad-Algebra/about"
             element={
               this.state.username ? (
                 <About />
               ) : (
-                <Navigate to="/algebra-seminar/login" />
+                <Navigate to="/Zavrsni-rad-Algebra/login" />
               )
             }
           />
