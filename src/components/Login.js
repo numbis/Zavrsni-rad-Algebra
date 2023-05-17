@@ -17,7 +17,7 @@ const Login = (props) => {
         <label htmlFor="title">
           <h1>Login</h1>
         </label>
-        <img src="img/123.png" blank="123" />
+        <img src="img/123.png" alt="image" />
         <input
           type="text"
           id="title"
