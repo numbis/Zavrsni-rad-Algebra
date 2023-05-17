@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Zavrsni-rad-Algebra/static/css/main.44d1524c.css",
+    "main.js": "/Zavrsni-rad-Algebra/static/js/main.81d2e776.js",
+    "index.html": "/Zavrsni-rad-Algebra/index.html",
+    "main.44d1524c.css.map": "/Zavrsni-rad-Algebra/static/css/main.44d1524c.css.map",
+    "main.81d2e776.js.map": "/Zavrsni-rad-Algebra/static/js/main.81d2e776.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44d1524c.css",
+    "static/js/main.81d2e776.js"
+  ]
+}
