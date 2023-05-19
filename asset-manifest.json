@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Zavrsni-rad-Algebra/static/css/main.44d1524c.css",
-    "main.js": "/Zavrsni-rad-Algebra/static/js/main.26156707.js",
+    "main.css": "/Zavrsni-rad-Algebra/static/css/main.e21baf21.css",
+    "main.js": "/Zavrsni-rad-Algebra/static/js/main.6b69e3bb.js",
     "index.html": "/Zavrsni-rad-Algebra/index.html",
-    "main.44d1524c.css.map": "/Zavrsni-rad-Algebra/static/css/main.44d1524c.css.map",
-    "main.26156707.js.map": "/Zavrsni-rad-Algebra/static/js/main.26156707.js.map"
+    "main.e21baf21.css.map": "/Zavrsni-rad-Algebra/static/css/main.e21baf21.css.map",
+    "main.6b69e3bb.js.map": "/Zavrsni-rad-Algebra/static/js/main.6b69e3bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.44d1524c.css",
-    "static/js/main.26156707.js"
+    "static/css/main.e21baf21.css",
+    "static/js/main.6b69e3bb.js"
   ]
 }
