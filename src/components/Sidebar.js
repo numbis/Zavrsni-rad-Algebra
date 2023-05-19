@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
 // https://github.com/msostaric031/algebra-seminarski-rad
@@ -29,14 +30,14 @@ class Sidebar extends React.Component {
           <div className="sd-body">
             <ul>
               <li>
-                <a href="/Zavrsni-rad-Algebra/" className="sd-link">
-                  ChatApp
-                </a>
+                <Link to="/zavrsni-rad-algebra/" className="sd-link">
+                  Chat
+                </Link>
               </li>
               <li>
-                <a href="/Zavrsni-rad-Algebra/about" className="sd-link">
+                <Link to="/zavrsni-rad-algebra/about" className="sd-link">
                   About
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,28 +1,26 @@
-import {Component} from "react";
+import { Component } from "react";
 import React from "react";
 
 class Input extends Component {
-
   state = {
-    text: ""
-  }
+    text: "",
+  };
 
   onChange(e) {
-    this.setState({text: e.target.value});
+    this.setState({ text: e.target.value });
   }
   onSubmit(e) {
     e.preventDefault();
-    this.setState({text: ""});
+    this.setState({ text: "" });
     this.props.onSendMessage(this.state.text);
   }
-
 
   render() {
     return (
       <div className="Input">
-        <form onSubmit={e => this.onSubmit(e)}>
+        <form onSubmit={(e) => this.onSubmit(e)}>
           <input
-            onChange={e => this.onChange(e)}
+            onChange={(e) => this.onChange(e)}
             value={this.state.text}
             type="text"
             placeholder="Enter your message and press ENTER"
@@ -34,8 +32,6 @@ class Input extends Component {
       </div>
     );
   }
-
-
 }
 
 export default Input;

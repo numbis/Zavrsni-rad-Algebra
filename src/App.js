@@ -22,41 +22,40 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="App">
         <Header
           toggleSidebar={this.toggleSidebar}
           username={this.state.username}
           handleLogout={this.handleLogout}
         />
         <Sidebar ref={(reference) => (this.sidebar = reference)} />
-
         <Routes>
           <Route
-            path="/Zavrsni-rad-Algebra/"
+            path="/zavrsni-rad-algebra/"
             element={
               this.state.username ? (
                 <Chat username={this.state.username} />
               ) : (
-                <Navigate to="/Zavrsni-rad-Algebra/login" />
+                <Navigate to="/zavrsni-rad-algebra/login" />
               )
-            }
-          ></Route>
-          <Route path="/Zavrsni-rad-Algebra/login" element={<Login onLogin={this.handleLogin} />}>
-
-          </Route>
-          <Route
-            path="/Zavrsni-rad-Algebra/about"
-            element={
-              this.state.username ? <About /> : <Navigate to="/Zavrsni-rad-Algebra/login" />
             }
           />
           <Route
-            path="/Zavrsni-rad-Algebra/about"
+            path="/zavrsni-rad-algebra/login"
+            element={
+              <Login
+                onLogin={this.handleLogin}
+                username={this.state.username}
+              />
+            }
+          />
+          <Route
+            path="/zavrsni-rad-algebra/about"
             element={
               this.state.username ? (
                 <About />
               ) : (
-                <Navigate to="/Zavrsni-rad-Algebra/login" />
+                <Navigate to="/zavrsni-rad-algebra/login" />
               )
             }
           />

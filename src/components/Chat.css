@@ -24,7 +24,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 50vh;
 }
 
 .App-header {
