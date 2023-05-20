@@ -22,7 +22,7 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div className="App">
+      <div>
         <Header
           toggleSidebar={this.toggleSidebar}
           username={this.state.username}

@@ -1,8 +1,9 @@
 body {
   /* background-image: linear-gradient(#5f3dc4, #748ffc); */
   background-repeat: no-repeat;
-  height: 100vh;
+
   font-family: "Courier New", Courier, monospace;
+
   letter-spacing: 10px;
 }
 html::-webkit-scrollbar-thumb {
@@ -24,7 +25,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 92vh;
 }
 
 .App-header {
@@ -78,8 +79,11 @@ html {
 .Message-content > .username {
   display: block;
   color: gray;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   padding-bottom: 4px;
+  letter-spacing: 3px;
 }
 
 .Message-content > .text {
@@ -87,13 +91,15 @@ html {
   max-width: 400px;
   margin: 0;
   border-radius: 12px;
-  background-color: cornflowerblue;
+  background-color: #868e96;
   color: white;
   display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 
 .currentMember > .Message-content .text {
-  background-color: orangered;
+  background-color: #262626;
 }
 
 form {
@@ -111,14 +117,20 @@ input {
   border: 2px solid #868e96;
   flex-grow: 1;
   background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .Input {
   background-color: #262626;
   padding-top: 25px;
 }
+.img-send {
+  width: 15px;
+  color: #4158d0;
+  opacity: 50%;
+}
 button {
   padding: 0 10px;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #495057;
   color: #fff;
   border: none;
@@ -127,6 +139,7 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 button:hover {
   opacity: 70%;

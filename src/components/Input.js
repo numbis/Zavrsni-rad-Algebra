@@ -27,7 +27,10 @@ class Input extends Component {
             // bilo autofocus="true"
             autoFocus={true}
           />
-          <button>Send</button>
+          <button>
+            Send{" "}
+            <img src={require("./img/send.png")} className="img-send"></img>
+          </button>
         </form>
       </div>
     );
