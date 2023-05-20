@@ -26,7 +26,7 @@ const Login = (props) => {
           value={usernameText}
           onChange={(e) => setUserNameText(e.target.value)}
         ></input>
-        <button className="login-btn">Login</button>
+        <button className="login-btn">Enter</button>
       </form>
     </div>
   );

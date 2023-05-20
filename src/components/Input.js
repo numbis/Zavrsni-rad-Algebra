@@ -28,7 +28,7 @@ class Input extends Component {
             autoFocus={true}
           />
           <button>
-            Send{" "}
+            {" "}
             <img src={require("./img/send.png")} className="img-send"></img>
           </button>
         </form>

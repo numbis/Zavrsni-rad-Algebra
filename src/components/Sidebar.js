@@ -22,7 +22,7 @@ class Sidebar extends React.Component {
       <div className="container-fluid mt-3">
         <div className={`sidebar ${isOpen === true ? "active" : ""}`}>
           <div className="sd-header">
-            <h4>Menu</h4>
+            <h4>ChatVerse</h4>
             <div className="btn btn-primary" onClick={this.ToggleSidebar}>
               Close Sidebar
             </div>

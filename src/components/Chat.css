@@ -42,11 +42,16 @@ html {
   padding: 20px 0;
   max-width: 900px;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   list-style: none;
   padding-left: 0;
   flex-grow: 1;
   overflow: auto;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .Messages-message {
@@ -114,10 +119,11 @@ input {
   padding: 5px;
   font-size: 16px;
   border-radius: 8px;
-  border: 2px solid #868e96;
+  border: none;
   flex-grow: 1;
-  background-color: white;
+  background-color: #f7;
   font-family: Arial, Helvetica, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .Input {
   background-color: #262626;
@@ -128,19 +134,53 @@ input {
   color: #4158d0;
   opacity: 50%;
 }
+
 button {
-  padding: 0 10px;
+  /* padding: 0 10px; */
   font-size: 14px;
-  background-color: #495057;
-  color: #fff;
+  background-color: #f7f7f7;
+  color: #262626;
   border: none;
   border-radius: 8px;
   margin-left: 10px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 5px;
+  padding: 0 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 button:hover {
   opacity: 70%;
+}
+.sidebar-btn button {
+  padding: 0 5px;
+}
+.img-send button {
+  padding: 20px;
+}
+.About-wrap {
+  background-color: #f7f7f7;
+  max-width: 70%;
+  text-align: center;
+  margin: 25px auto;
+  border-radius: 30px;
+}
+.content {
+  padding: 40px;
+}
+.content p {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  text-align: left;
+  margin-top: 50px;
+}
+.frist-content {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+.img-box-about {
+  width: 400px;
+
+  height: 400px;
+  border-radius: 30px;
 }
