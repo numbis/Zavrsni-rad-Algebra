@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Zavrsni-rad-Algebra/static/css/main.3971099b.css",
-    "main.js": "/Zavrsni-rad-Algebra/static/js/main.fd5ac79b.js",
+    "main.css": "/Zavrsni-rad-Algebra/static/css/main.881bc7d3.css",
+    "main.js": "/Zavrsni-rad-Algebra/static/js/main.7fb0b9a0.js",
     "static/media/about.jpg": "/Zavrsni-rad-Algebra/static/media/about.ef4f0066b58f82f38776.jpg",
     "static/media/user.png": "/Zavrsni-rad-Algebra/static/media/user.9e5ca7c88720544fd9d1.png",
     "static/media/send.png": "/Zavrsni-rad-Algebra/static/media/send.c7db0ac7a3f3f3b41054.png",
     "index.html": "/Zavrsni-rad-Algebra/index.html",
-    "main.3971099b.css.map": "/Zavrsni-rad-Algebra/static/css/main.3971099b.css.map",
-    "main.fd5ac79b.js.map": "/Zavrsni-rad-Algebra/static/js/main.fd5ac79b.js.map"
+    "main.881bc7d3.css.map": "/Zavrsni-rad-Algebra/static/css/main.881bc7d3.css.map",
+    "main.7fb0b9a0.js.map": "/Zavrsni-rad-Algebra/static/js/main.7fb0b9a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.3971099b.css",
-    "static/js/main.fd5ac79b.js"
+    "static/css/main.881bc7d3.css",
+    "static/js/main.7fb0b9a0.js"
   ]
 }
