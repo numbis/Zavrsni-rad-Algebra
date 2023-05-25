@@ -17,7 +17,9 @@ const About = () => {
               Jarkko Oikarinen.
             </p>
 
-            <button>Find out more</button>
+            <button>
+              <a href="#contact">Find out more</a>{" "}
+            </button>
           </div>
 
           <div>
@@ -39,12 +41,12 @@ const About = () => {
               className="img-box-about girl_1"
             ></img>
             <img
-              src={require("./img/image01.png")}
+              src={require("./img/girl2.jpg")}
               className="img-box-about girl_2"
             ></img>
 
             <img
-              src={require("./img/image01.png")}
+              src={require("./img/man1.jpg")}
               className="img-box-about girl_3"
             ></img>
           </div>
@@ -55,7 +57,9 @@ const About = () => {
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words
             </p>
-            <button>Read more</button>
+            <button>
+              <a href="#contact">Find more</a>
+            </button>
           </div>
         </div>
       </div>
@@ -69,7 +73,11 @@ const About = () => {
             ></img>
           </div>
           <div className="download-content">
-            <h2>50% OFF ON EVERY DOWNLOAD NOW OUR APP</h2>
+            <h2>
+              {" "}
+              <span>50%</span> OFF ON EVERY DOWNLOAD
+            </h2>
+            <h3> DOWNLOAD NOW OUR APP</h3>
             <p>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
@@ -87,7 +95,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="app-form-wrap">
+      <div className="app-form-wrap" id="contact">
         <div className="app-form">
           <h3>Get in touch...</h3>
           <form>

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   /* background-image: linear-gradient(#5f3dc4, #748ffc); */
   background-repeat: no-repeat;
@@ -26,13 +29,23 @@ html::-webkit-scrollbar {
 html {
   scroll-behavior: smooth;
 }
+.About-wrap {
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+}
 .App {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 92vh;
 }
-
+a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+a:hover {
+  color: #f3f3f3;
+  text-decoration: none;
+}
 .App-header {
   background-color: #262626;
   padding: 8px;
@@ -153,7 +166,8 @@ button {
   font-family: Arial, Helvetica, sans-serif;
 }
 button:hover {
-  opacity: 70%;
+  background-color: #343a40;
+  color: #f7f7f7;
 }
 .sidebar-btn button {
   padding: 0 5px;
@@ -205,6 +219,10 @@ button:hover {
   border-radius: 0;
   color: #f3f3f3;
 }
+.content_text a {
+  text-decoration: none;
+  color: #262626;
+}
 .content-two {
   margin: 0 auto;
   width: 95%;
@@ -230,7 +248,10 @@ button:hover {
 .people_gallery img:hover {
   opacity: 100%;
   cursor: pointer;
-  border: #f3f3f3 solid 8px;
+  border: #f3f3f3 solid 5px;
+}
+.people_gallery img {
+  border: #343a40 solid 5px;
 }
 .content_text {
   color: #f3f3f3;
@@ -288,6 +309,15 @@ button:hover {
 .download-content h2 {
   font-weight: bold;
   font-size: 3em;
+}
+.download-content h3 {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+.download-content h3:hover {
+  color: #f7f7f7;
+  cursor: pointer;
 }
 .download-content p {
   font-weight: bold;
@@ -347,12 +377,75 @@ textarea {
   display: flex;
   align-items: center;
   margin: 50px 0;
-  justify-content: space-between;
   gap: 15px;
 }
 .submit-button:hover {
-  opacity: 90%;
+  background-color: #343a40;
 }
 iframe {
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .app-form-wrap {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .content {
+    display: block;
+  }
+  .name_break {
+    text-align: center;
+    font-size: 2em;
+  }
+  .header-img img {
+    width: 100%;
+  }
+  .text_one {
+    margin: 40px auto;
+    text-align: center;
+  }
+  .people_gallery {
+    justify-content: space-between;
+  }
+  .content_text h3 {
+    text-align: center;
+  }
+  .content_text {
+    text-align: center;
+  }
+  .content-two {
+    display: block;
+    margin: 0 auto;
+  }
+  .find-us {
+    display: none;
+  }
+  .app-form {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .google_map {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .man-with-phone {
+    display: none;
+  }
+  .app-content {
+    padding: 40px;
+  }
+  .people_gallery img {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .people_gallery {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
