@@ -1,16 +1,21 @@
 body {
   /* background-image: linear-gradient(#5f3dc4, #748ffc); */
   background-repeat: no-repeat;
-
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
   font-family: "Courier New", Courier, monospace;
 
   letter-spacing: 10px;
 }
 html::-webkit-scrollbar-thumb {
-  background: #262626;
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
 }
 html::-webkit-scrollbar-track {
-  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  background: #262626;
 }
 html::-webkit-scrollbar {
   width: 1.4rem;
@@ -121,7 +126,7 @@ input {
   border-radius: 8px;
   border: none;
   flex-grow: 1;
-  background-color: #f7;
+
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -141,7 +146,6 @@ button {
   background-color: #f7f7f7;
   color: #262626;
   border: none;
-  border-radius: 8px;
   margin-left: 10px;
   font-weight: bold;
   text-transform: uppercase;
@@ -157,32 +161,30 @@ button:hover {
 .img-send button {
   padding: 20px;
 }
-.About-wrap {
+.text_one {
+  font-size: 15px;
+  margin: 0 10px;
+}
+.content-wrap {
   background-color: #f7f7f7;
-  max-width: 95%;
   text-align: center;
+
   margin: 50px auto;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+
   letter-spacing: normal;
 }
-.content {
-  /* padding: 100px; */
-}
+
 .name_break {
   text-align: left;
-  text-transform: uppercase;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
   border-right: #f3f3f3 3px solid;
   padding: 100px;
   /* margin-left: 60px; */
   background-color: #262626;
   color: #f3f3f3;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
-
+.content-two-wrap {
+  background-color: #262626;
+}
 .content {
   display: flex;
   justify-content: space-between;
@@ -191,8 +193,6 @@ button:hover {
 .img-box-about {
   width: 800px;
   height: 400px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 .text_one {
   width: 500px;
@@ -204,4 +204,155 @@ button:hover {
   padding: 10px;
   border-radius: 0;
   color: #f3f3f3;
+}
+.content-two {
+  margin: 0 auto;
+  width: 95%;
+  background-color: #262626;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.people_gallery {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.people_gallery img {
+  width: 200px;
+  height: auto;
+  border: none;
+  border-radius: 100px;
+}
+.people_gallery img:hover {
+  opacity: 100%;
+  cursor: pointer;
+  border: #f3f3f3 solid 8px;
+}
+.content_text {
+  color: #f3f3f3;
+  letter-spacing: normal;
+  text-align: end;
+}
+.content_text h3 {
+  margin-bottom: 70px;
+  font-size: 3em;
+  text-align: end;
+}
+.content_text p {
+  margin-bottom: 25px;
+  text-align: end;
+}
+.content_text button {
+  padding: 8px;
+}
+.app-content-wrap {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+.app-content {
+  display: flex;
+  letter-spacing: normal;
+  width: 95%;
+  margin: 0px auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
+}
+.google-apple-store {
+  display: flex;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  margin: 15px auto;
+  gap: 20px;
+}
+.google-apple-store img:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+.man-with-phone img {
+  width: 400px;
+  height: auto;
+  margin-top: 80px;
+}
+.download-content h2 {
+  font-weight: bold;
+  font-size: 3em;
+}
+.download-content p {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* .download-content {
+  background-color: #262626;
+  padding: 50px;
+  border-radius: 15px;
+  opacity: 90%;
+} */
+.app-form-wrap {
+  background-color: #262626;
+  color: #f3f3f3;
+}
+.app-form {
+  padding: 80px;
+}
+.app-form form {
+  display: grid;
+  gap: 15px;
+  color: #f3f3f3;
+  max-width: 100%;
+}
+textarea {
+  background-color: #343a40;
+  color: #f3f3f3;
+}
+.app-form h3 {
+  margin-bottom: 35px;
+}
+.app-form input {
+  background-color: #343a40;
+  color: #f3f3f3;
+  border-bottom: solid 3px #868e96;
+  border-radius: 0px;
+  width: 500px;
+}
+.app-form-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+.find-us {
+  margin-top: 100px;
+  letter-spacing: normal;
+}
+.icons {
+  width: 55px;
+  height: 55px;
+  padding: 15px;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+  justify-content: space-between;
+  gap: 15px;
+}
+.submit-button:hover {
+  opacity: 90%;
+}
+iframe {
+  margin-top: 40px;
 }
