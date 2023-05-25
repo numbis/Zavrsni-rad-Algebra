@@ -126,7 +126,7 @@ input {
   border-radius: 8px;
   border: none;
   flex-grow: 1;
-  background-color: #f7;
+
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -173,9 +173,7 @@ button:hover {
 
   letter-spacing: normal;
 }
-.content {
-  /* padding: 100px; */
-}
+
 .name_break {
   text-align: left;
   border-right: #f3f3f3 3px solid;
@@ -295,8 +293,7 @@ button:hover {
   font-weight: bold;
   margin-top: 15px;
 }
-.img-download {
-}
+
 /* .download-content {
   background-color: #262626;
   padding: 50px;
