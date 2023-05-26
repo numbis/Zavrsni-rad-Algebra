@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/Zavrsni-rad-Algebra/static/css/main.9e98c869.css",
-    "main.js": "/Zavrsni-rad-Algebra/static/js/main.ae0deac3.js",
+    "main.css": "/Zavrsni-rad-Algebra/static/css/main.6511f88f.css",
+    "main.js": "/Zavrsni-rad-Algebra/static/js/main.6ef859b6.js",
     "static/media/man-with-phone.png": "/Zavrsni-rad-Algebra/static/media/man-with-phone.cce7dd28860d11e47c6e.png",
     "static/media/about.jpg": "/Zavrsni-rad-Algebra/static/media/about.ef4f0066b58f82f38776.jpg",
     "static/media/image01.png": "/Zavrsni-rad-Algebra/static/media/image01.0d8a67d4122e6f00b584.png",
+    "static/media/man1.jpg": "/Zavrsni-rad-Algebra/static/media/man1.d1c21627a8fe9b78a0e9.jpg",
+    "static/media/girl2.jpg": "/Zavrsni-rad-Algebra/static/media/girl2.62a1078f8bc3759649e6.jpg",
     "static/media/user.png": "/Zavrsni-rad-Algebra/static/media/user.9e5ca7c88720544fd9d1.png",
     "static/media/location.png": "/Zavrsni-rad-Algebra/static/media/location.90be127866f7b5975e4f.png",
     "static/media/send.png": "/Zavrsni-rad-Algebra/static/media/send.c7db0ac7a3f3f3b41054.png",
     "index.html": "/Zavrsni-rad-Algebra/index.html",
-    "main.9e98c869.css.map": "/Zavrsni-rad-Algebra/static/css/main.9e98c869.css.map",
-    "main.ae0deac3.js.map": "/Zavrsni-rad-Algebra/static/js/main.ae0deac3.js.map"
+    "main.6511f88f.css.map": "/Zavrsni-rad-Algebra/static/css/main.6511f88f.css.map",
+    "main.6ef859b6.js.map": "/Zavrsni-rad-Algebra/static/js/main.6ef859b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e98c869.css",
-    "static/js/main.ae0deac3.js"
+    "static/css/main.6511f88f.css",
+    "static/js/main.6ef859b6.js"
   ]
 }
