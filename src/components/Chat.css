@@ -342,6 +342,8 @@ button:hover {
   gap: 15px;
   color: #f3f3f3;
   max-width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 textarea {
   background-color: #343a40;
@@ -447,5 +449,22 @@ iframe {
     display: block;
     width: 50%;
     margin: 0 auto;
+  }
+  iframe {
+    width: 100%;
+  }
+  .app-form input {
+    width: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    h1 {
+      text-align: center;
+    }
+    .text_one {
+      width: 100%;
+    }
+    .google-apple-store {
+      width: 100%;
+    }
   }
 }
